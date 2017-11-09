@@ -1,0 +1,16 @@
+<table>
+  <tr>
+    <th>Город</th>
+    <th>Температура</th>
+    <th>Давление</th>
+    <th>Влажность</th>
+    <th>Скорость ветра</th>
+  </tr>
+  <tr *ngFor="let weather of citiesWeather">
+    <td>{{ weather.city }}</td>
+    <td>{{ weather.temperature }}°</td>
+    <td>{{ weather.pressure }} мм рт. ст.</td>
+    <td>{{ weather.humidity }}%</td>
+    <td>{{ weather.windSpeed }} м/с</td>
+  </tr>
+</table>
